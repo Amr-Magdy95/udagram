@@ -81,7 +81,7 @@ jobs:
           command: |
             echo "TODO: Build the backend API"
             echo "hello"
-            eb init --region us-west-2 --platform node.js
+            eb init udagramapp012456 --region us-west-2 --platform node.js
             npm run api:build
   # deploy step will run only after manual approval
   deploy:
