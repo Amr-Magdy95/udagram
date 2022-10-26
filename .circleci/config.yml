@@ -23,9 +23,9 @@ jobs:
       - run:
           name: removing node_modules
           command: |
-            rm -r node_modules
-            cd udagram/udgram-frontend && rm -r node_modules
-            cd udagram/udgram-api && rm -r node_modules
+            rm -fr node_modules
+            cd udagram/udgram-frontend && rm -fr node_modules
+            cd udagram/udgram-api && rm -fr node_modules
 
       # Use root level package.json to install dependencies in the frontend app
       - run:
