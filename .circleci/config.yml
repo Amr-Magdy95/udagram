@@ -15,11 +15,18 @@ jobs:
       - node/install:
           node-version: '14.15'         
       - checkout
-      # Performing a cache clean
+      # Performing a clean up
       - run: 
           name: Cache Clean
           command: | 
             npm cache clean --force
+      - run:
+          name: removing node_modules
+          command: |
+            rm -r node_modules
+            cd udagram/udgram-frontend && rm -r node_modules
+            cd udagram/udgram-api && rm -r node_modules
+
       # Use root level package.json to install dependencies in the frontend app
       - run:
           name: Install Front-End Dependencies
