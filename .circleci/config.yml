@@ -19,7 +19,8 @@ jobs:
       - run: 
           name: removing package-lock.json
           command: |
-            rm ./package-lock.json 
+            rm ./package-lock.json
+            ls 
             cd udagram-frontend && rm -f ./package-lock.json
             cd ../udagram-api && rm -f ./package-lock.json
       - run: 
