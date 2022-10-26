@@ -63,5 +63,8 @@
   },
     "include": [
         "src/**/*"
-    ]
+    ],
+    "compilerOptions": {
+      "skipLibCheck": true
+  },
 }
