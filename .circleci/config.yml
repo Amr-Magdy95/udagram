@@ -21,6 +21,7 @@ jobs:
           command: |
             rm ./package-lock.json
             ls 
+            cd udagram
             cd udagram-frontend && rm -f ./package-lock.json
             cd ../udagram-api && rm -f ./package-lock.json
       - run: 
