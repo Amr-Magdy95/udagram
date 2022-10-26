@@ -28,6 +28,7 @@ jobs:
           name: Cache Clean
           command: | 
             npm cache clean --force
+            cd udagram
             cd udagram-frontend && cache clean --force
             cd ../udagram-api && cache clean --force
       - run:
