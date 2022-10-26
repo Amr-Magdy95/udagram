@@ -29,8 +29,8 @@ jobs:
           command: | 
             npm cache clean --force
             cd udagram
-            cd udagram-frontend && cache clean --force
-            cd ../udagram-api && cache clean --force
+            cd udagram-frontend && npm cache clean --force
+            cd ../udagram-api && npm cache clean --force
       - run:
           name: removing node_modules
           command: |
