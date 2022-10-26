@@ -14,5 +14,8 @@
         "deploy": "npm run api:deploy && npm run frontend:deploy",
         "backend:install": "cd udagram/udagram-api && npm install -f",
         "backend:lint": "cd udagram/udagram-api && npm run lint"
+    },
+    "devDependencies": {
+        "typescript": "^3.4.5"
     }
 }
