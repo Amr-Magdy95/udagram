@@ -13,9 +13,7 @@ jobs:
     steps:
       # install node and checkout code
       - node/install:
-          node-version: '14.15'
-      - aws/install:
-                   
+          node-version: '14.15'              
       - checkout
       # Performing a clean up
       - run: 
