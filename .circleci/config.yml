@@ -19,7 +19,6 @@ jobs:
       - run: 
           name: running npm clean
           command: |
-            npm run clean
             rm ./package-lock.json 
       - run: 
           name: Cache Clean
