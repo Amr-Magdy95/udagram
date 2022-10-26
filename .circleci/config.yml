@@ -81,6 +81,7 @@ jobs:
           command: |
             echo "TODO: Build the backend API"
             echo "hello"
+            eb init --region us-west-2 --platform node
             npm run api:build
   # deploy step will run only after manual approval
   deploy:
