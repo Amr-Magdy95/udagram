@@ -16,7 +16,7 @@ jobs:
           node-version: '14.15' 
       - eb/setup 
       - aws-cli/setup:
-          profile-name: exampl             
+          profile-name: example             
       - checkout
       # Performing a clean up
       - run: 
@@ -80,8 +80,6 @@ jobs:
           name: API Build
           command: |
             echo "TODO: Build the backend API"
-            eb init
-            eb create
             echo "hello"
             npm run api:build
   # deploy step will run only after manual approval
