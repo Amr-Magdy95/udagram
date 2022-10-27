@@ -13,7 +13,7 @@ jobs:
     steps:
       # install node and checkout code
       - node/install:
-          node-version: '14.15' 
+          node-version: '16.15' 
       - eb/setup 
       - aws-cli/setup:
           profile-name: example             
