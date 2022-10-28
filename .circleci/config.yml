@@ -98,6 +98,7 @@ jobs:
           # TODO: Install, build, deploy in both apps
           command: |
             echo "# TODO: Install, build, deploy in both apps"
+            echo process.env.POSTGRES_HOST
             npm run deploy
             
 workflows:
