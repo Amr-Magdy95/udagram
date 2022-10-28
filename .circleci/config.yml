@@ -105,7 +105,7 @@ jobs:
             echo "AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY" > .env
             echo "AWS_DEFAULT_REGION=$AWS_DEFAULT_REGION" > .env
             echo "AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID" > .env
-            echo $POSTGRES_HOST
+            echo "$POSTGRES_HOST"
       - run:
           name: Deploy App
           # TODO: Install, build, deploy in both apps
