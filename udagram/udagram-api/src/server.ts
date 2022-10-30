@@ -2,6 +2,7 @@ import * as dotenv from "dotenv";
 import cors from 'cors';
 import express from "express";
 import { sequelize } from "./sequelize";
+import { config } from "./config/config";
 
 import { IndexRouter } from "./controllers/v0/index.router";
 
@@ -50,7 +51,7 @@ import { V0_FEED_MODELS, V0_USER_MODELS } from "./controllers/v0/model.index";
   app.get("/", async (req, res) => {
     res.send("/api/v0/");
   });
-
+  const port = config.port;
   // Start the Server
   app.listen();
 })();
